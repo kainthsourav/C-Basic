@@ -46,6 +46,12 @@ namespace CSharpBasic
             //Enum Demo Class
             var enumDemo = new DemoEnum();
             enumDemo.EnumDemo();
+
+
+            //Reference Types and Values Types
+            var referAndValue = new ReferanceAndValueType();
+            referAndValue.Value();
+            referAndValue.Refer();
             Console.ReadLine();
         }
     }
