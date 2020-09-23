@@ -166,6 +166,8 @@ DocProject/Help/html
 
 # Click-Once directory
 publish/
+packages/
+vs/
 
 # Publish Web Output
 *.[Pp]ublish.xml
@@ -338,5 +340,3 @@ ASALocalRun/
 
 # BeatPulse healthcheck temp database
 healthchecksdb
-
-vs/
