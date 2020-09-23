@@ -31,6 +31,12 @@ namespace CSharpBasic
                 var num = "1";
                 b = Convert.ToByte(num);
                 Console.WriteLine(b);
+                Operateors op = new Operateors();
+                op.Add(30,40);
+                op.Div(10, 2);
+                op.Min(100, 50);
+                op.Mul(5, 5);
+                op.Logcial(4, 2, 6);
             }
             catch(Exception e)
             {
