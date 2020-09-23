@@ -15,11 +15,11 @@ namespace CSharpBasic
             int i = b;
             float f = i;
 
-            //Explicit/Casting Type Conversaton
-            //int x = 1;
-            //byte by = (byte)x;
-            //float ff = 1.0f;
-            //int y = (int)ff;
+          //  Explicit / Casting Type Conversaton
+            int x = 1;
+            byte by = (byte)x;
+            float ff = 1.0f;
+            int y = (int)ff;
 
             //Non Compatible Type
             string s = "1";
@@ -42,6 +42,10 @@ namespace CSharpBasic
             {
                 Console.WriteLine(e.Message);
             }
+
+            //Enum Demo Class
+            var enumDemo = new DemoEnum();
+            enumDemo.EnumDemo();
             Console.ReadLine();
         }
     }
