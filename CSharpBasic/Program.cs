@@ -16,16 +16,27 @@ namespace CSharpBasic
             float f = i;
 
             //Explicit/Casting Type Conversaton
-            int x = 300;
-            byte by = (byte)x;
-            float ff = 1.0f;
-            int y = (int)ff;
+            //int x = 1;
+            //byte by = (byte)x;
+            //float ff = 1.0f;
+            //int y = (int)ff;
 
             //Non Compatible Type
             string s = "1";
             i = Convert.ToInt32(s);
             int j = int.Parse(s);
 
+            try
+            {
+                var num = "1";
+                b = Convert.ToByte(num);
+                Console.WriteLine(b);
+            }
+            catch(Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
+            Console.ReadLine();
         }
     }
 }

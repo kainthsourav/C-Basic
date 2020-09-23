@@ -5,3 +5,6 @@ C:\Users\soura\source\repos\CSharpBasic\CSharpBasic\obj\Debug\CSharpBasic.csproj
 C:\Users\soura\source\repos\CSharpBasic\CSharpBasic\obj\Debug\CSharpBasic.csproj.CoreCompileInputs.cache
 C:\Users\soura\source\repos\CSharpBasic\CSharpBasic\obj\Debug\CSharpBasic.exe
 C:\Users\soura\source\repos\CSharpBasic\CSharpBasic\obj\Debug\CSharpBasic.pdb
+C:\Users\soura\source\repos\CSharpBasic\CSharpBasic\bin\Debug\JetBrains.Annotations.dll
+C:\Users\soura\source\repos\CSharpBasic\CSharpBasic\bin\Debug\JetBrains.Annotations.xml
+C:\Users\soura\source\repos\CSharpBasic\CSharpBasic\obj\Debug\CSharpBasic.csproj.CopyComplete
