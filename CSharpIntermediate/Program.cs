@@ -6,33 +6,57 @@ using System.Threading.Tasks;
 
 namespace CSharpIntermediate
 {
-    public class Person
-    {
-        public string Name;
-
-        public void Intro(string name)
-        {
-            Console.WriteLine("Hi {0}, I am {1}", name, Name);
-        }
-        public static Person Parse(string str)
-        {
-            var Person = new Person();
-            Person.Name = str;
-            return Person;
-        }
-    }
 
     public class Program
     {
+        public string Name;
+        //default constructors
+        public Program()
+        {
+
+        }
+        //parameterised constructors
+        public Program(string name)
+        {
+            this.Name = name;
+        }
+        //constructors overloading
+        public Program(int id,string Name)
+        {
+
+        }
+
         static void Main(string[] args)
         {
             //var Person = new Person();
             // Person.Name = "Sourav";
             // Person.Intro("Kainth");
 
-            //Static Function
+            //class and Static Function Demo
             var Per = Person.Parse("Sourav");
             Per.Intro("Kainth");
+
+            //constructors demo
+            //Default constructor
+            var customer = new Customer();
+            Console.WriteLine(customer.id);
+            Console.WriteLine(customer.Name);
+
+            //Parameter constructor
+            var cus = new Customer(1, "Sourav");
+            Console.WriteLine("Parameter constructo {0} {1}", cus.id, cus.Name);
+
+            //constructors overloading
+            var cusm = new Customer(5);
+            Console.WriteLine("constructors overloading {0}", cusm.id);
+
+            //Orders --- Custructoer
+            var order = new Order();
+            customer.Orders.Add(order);
+
+
+
+
 
             Console.ReadLine();
         }
