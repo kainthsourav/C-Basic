@@ -7,7 +7,6 @@ using System.Threading.Tasks;
 namespace CSharpIntermediate
 {
 
-
     public class Program
     {
         public string Name;
@@ -65,8 +64,26 @@ namespace CSharpIntermediate
             };
 
 
-
+            Program.Method();
             Console.ReadLine();
+        }
+        public static void Method()
+        {
+            //Method Demo and overloading
+            try
+            {
+                var methodDemo = new MethodDemo(10, 20);
+                methodDemo.Move(new MethodDemo(40, 60));
+                Console.WriteLine("Point is at X: {0} Y:{1}", methodDemo.x, methodDemo.y);
+
+                methodDemo.Move(400, 800);
+                Console.WriteLine("Point is at X: {0} Y:{1}", methodDemo.x, methodDemo.y);
+            }
+            catch (Exception)
+            {
+
+                Console.WriteLine("Error Occured");
+            }
         }
     }
 }
