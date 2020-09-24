@@ -6,7 +6,6 @@ using System.Threading.Tasks;
 
 namespace CSharpIntermediate
 {
-
     public class Program
     {
         public string Name;
@@ -62,9 +61,16 @@ namespace CSharpIntermediate
                 FirstName = "Sourav",
                 LastName = "Kainth"
             };
-
+           
+           
 
             Program.Method();
+
+            //Properties
+            var prop = new PropertiesDemo();
+            prop.SetDateTime(new DateTime(1980, 1, 1));
+            Console.WriteLine(prop.GetDateTime());
+
             Console.ReadLine();
         }
         public static void Method()
