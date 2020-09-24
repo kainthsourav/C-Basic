@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Customer.cs" />
+    <Compile Include="HttpCoookie.cs" />
     <Compile Include="MethodDemo.cs" />
     <Compile Include="ObjectInitializer.cs" />
     <Compile Include="Order.cs" />

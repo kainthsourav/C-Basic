@@ -67,11 +67,17 @@ namespace CSharpIntermediate
             Program.Method();
 
             //Properties
-            var prop = new PropertiesDemo();
+            var prop = new PropertiesDemo(new DateTime(1982,1,2));
             //prop.SetDateTime(new DateTime(1980, 1, 1));
             //Console.WriteLine(prop.GetDateTime());
-            prop.Birthdate = new DateTime(1980, 1, 1);
+           
             Console.WriteLine(prop.Birthdate);
+            Console.WriteLine(prop.Age);
+
+            //Indexer Demo
+            var cookie = new HttpCoookie();
+            cookie["name"] = "Sourav";
+            Console.WriteLine(cookie["name"]);
 
             Console.ReadLine();
         }

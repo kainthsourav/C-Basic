@@ -4,7 +4,9 @@ namespace CSharpIntermediate
 {
     public class PropertiesDemo
     {
-        private DateTime _birthdate;
+
+        public DateTime Birthdate{get;private set; }//this can't be changed or accessed to set
+
         //public void SetDateTime(DateTime birthdate)
         //{
         //    _birthdate = birthdate;
@@ -13,11 +15,20 @@ namespace CSharpIntermediate
         //{
         //    return _birthdate;
         //}
-
-        public DateTime Birthdate
+        public PropertiesDemo(DateTime birthdate)
         {
-            get;
-            set;
+            Birthdate = birthdate;
+        }
+        
+
+        public int Age
+        {
+            get
+            {
+                var timespan = DateTime.Today - Birthdate;
+                var years = timespan.Days / 365;
+                return years;
+            }
         }
     }
 }
