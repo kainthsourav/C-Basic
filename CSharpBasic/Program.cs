@@ -83,7 +83,23 @@ namespace CSharpBasic
 
             var pass = new string(buffer);
             Console.WriteLine(pass);
+           
+            //array
+            var array = new ArraysDemo();
+            array.Demo();
+
+            //List
+            List<int> list = new List<int>();
+            for (int index = 0; index < 10; index++)
+            {
+                list.Add(index);
+            }
+            list.Remove(4);
+            var count=list.Count();
+            Console.WriteLine(count);
             Console.ReadLine();
+
+
         }
         
     }
