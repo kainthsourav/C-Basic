@@ -79,6 +79,13 @@ namespace CSharpIntermediate
             cookie["name"] = "Sourav";
             Console.WriteLine(cookie["name"]);
 
+            //Inheritance
+            var childClass = new ChildClass();
+            childClass.Copy(); //accessing parent class method
+            childClass.width = 200;
+            childClass.height = 100;
+            childClass.AddHyperLink("www.google.com");
+
             Console.ReadLine();
         }
         public static void Method()
