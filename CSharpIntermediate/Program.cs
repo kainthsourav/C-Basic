@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 namespace CSharpIntermediate
 {
 
+
     public class Program
     {
         public string Name;
@@ -55,6 +56,13 @@ namespace CSharpIntermediate
             customer.Orders.Add(order);
 
 
+            //Object Intitialzers
+            //without making mutiple const
+            var Oi = new ObjectInitializer
+            {
+                FirstName = "Sourav",
+                LastName = "Kainth"
+            };
 
 
 
