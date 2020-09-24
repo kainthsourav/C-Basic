@@ -68,8 +68,10 @@ namespace CSharpIntermediate
 
             //Properties
             var prop = new PropertiesDemo();
-            prop.SetDateTime(new DateTime(1980, 1, 1));
-            Console.WriteLine(prop.GetDateTime());
+            //prop.SetDateTime(new DateTime(1980, 1, 1));
+            //Console.WriteLine(prop.GetDateTime());
+            prop.Birthdate = new DateTime(1980, 1, 1);
+            Console.WriteLine(prop.Birthdate);
 
             Console.ReadLine();
         }
