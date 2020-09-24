@@ -86,6 +86,12 @@ namespace CSharpIntermediate
             childClass.height = 100;
             childClass.AddHyperLink("www.google.com");
 
+            //compostion demo
+            var dbMig = new DbMigrator(new Logger());
+            var install = new Installer(new Logger());
+            dbMig.Migrate();
+            install.Install();
+
             Console.ReadLine();
         }
         public static void Method()
