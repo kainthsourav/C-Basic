@@ -51,6 +51,7 @@
     <Compile Include="interhertiaceDemo.cs" />
     <Compile Include="Logger.cs" />
     <Compile Include="MethodDemo.cs" />
+    <Compile Include="MethodOverriding.cs" />
     <Compile Include="ObjectInitializer.cs" />
     <Compile Include="Order.cs" />
     <Compile Include="Person.cs" />

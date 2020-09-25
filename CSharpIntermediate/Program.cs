@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CSharpIntermediate
 {
-    public class Program
+    public class Program : MethodOverriding
     {
         public string Name;
         //default constructors
@@ -99,11 +99,11 @@ namespace CSharpIntermediate
             //object type to value --unboxing
             int numx = (int)obj;
 
-
-
-            
-
-
+            //method overrding
+            var program = new Program();
+            program.Add(4, 3);
+            var methodOverriding = new MethodOverriding();
+            methodOverriding.Add(4, 3);
             Console.ReadLine();
         }
         public static void Method()
@@ -123,6 +123,11 @@ namespace CSharpIntermediate
 
                 Console.WriteLine("Error Occured");
             }
+        }
+        //method overrding
+        public override void Add(int x,int y)
+        {
+            Console.WriteLine("Method overriden : {0}", x - y);
         }
     }
 }
