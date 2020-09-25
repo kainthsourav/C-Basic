@@ -4,6 +4,10 @@
     {
         private readonly Logger logger;
 
+        public DbMigrator()
+        {
+        }
+
         public DbMigrator(Logger logger)
         {
             this.logger = logger;

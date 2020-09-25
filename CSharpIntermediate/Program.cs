@@ -92,6 +92,18 @@ namespace CSharpIntermediate
             dbMig.Migrate();
             install.Install();
 
+            //boxing and unboxing
+            //value type to object --boxing
+            int number = 10;
+            Object obj = number;
+            //object type to value --unboxing
+            int numx = (int)obj;
+
+
+
+            
+
+
             Console.ReadLine();
         }
         public static void Method()
